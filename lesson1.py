@@ -89,7 +89,10 @@
 # Вхідні дані #2 - 1 2
 # Відповідь #2 - 11 8
 
+#qdsd
+
 data = input().split()
+
 for i in range(len(data)):
     data[i] = int(data[i])
 
