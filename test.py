@@ -9,3 +9,19 @@
 # 37
 # Відповідь #1
 # 11
+numRows = int(input())
+answer = []
+
+for i in range(numRows):
+    grid = []
+    for j in range(i+1):
+        if j == 0 or j == i:
+            grid.append(1)
+            continue
+        x = answer[i-1][j-1] + answer[i-1][j]
+        grid.append(x)
+    answer.append(grid)
+
+for i in range(numRows):
+    for j in range(i):
+        print(answer[i][j])
